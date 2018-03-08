@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- 新 Bootstrap 核心 CSS 文件 -->
+<link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+ 
+<!-- 可选的Bootstrap主题文件（一般不使用） -->
+<script src="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"></script>
+ 
+<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+<script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+ 
+<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <title>>Flight航空订票</title>
+    <!--<link href="/node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+-->
+</head>
+<body>
+<div class="container-fluid">
+	<div class="row">
+		<div class="span12">
+			<nav class="navbar navbar-inverse">
+ <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Flight</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">主页 <span class="sr-only">(current)</span></a></li>
+		<li><a data-toggle="modal" data-target=".bs-example-modal-sm">搜索</a></li>
+		
+          <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+  <div class="modal-dialog modal-sm" role="document">
+    <div class="modal-content">
+		 <div class="container">
+
+        <div style="width:20000px">
+            <form class="form-signin">
+				<h2 class="form-signin-heading">搜索</h2>
+				<br>
+				<div class="btn-group">
+                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">选择你需要的查询类型： <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a href="#">航班号</a></li>
+                      <li><a href="#">起飞时间</a></li>
+                      <li><a href="#">出发地</a></li>
+                      <li><a href="#">目的地</a></li>
+                    </ul> 
+               </div>
+               <div>
+                 <label for="exampleInputEmail1" class="sr-only">邮箱：</label>
+                 <input type="text" id="exampleInputEmail1" placeholder="请输入要查询的信息">
+			   </div>
+				<br>
+              <button type="submit" class="btn btn-default">进入邮箱</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+      </ul>
+      <form class="navbar-form navbar-left">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+      <ul class="nav navbar-nav navbar-right">
+		<li><a href="./login.html">登录</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">User_ID<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">查看我的订单</a></li>
+            <li><a href="#">修改登录密码</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">退出登录</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+			<div class="jumbotron masthead">
+				<div class="container">
+					<div class="page-header">
+					<h1 class="text-left">
+						<em>Flight  <small>--航空订票服务</small></em>
+					</h1>
+					<p class="text-left">
+					</p>
+					<p class="text-left">
+					</p>
+					</div>
+				</div>
+			</div>
+			<div class="tabbable" id="tabs-404493">
+				<ul class="nav nav-tabs">
+					<li class="active">
+						<a data-toggle="tab" href="#panel-99734">第一部分</a>
+					</li>
+					<li >
+						<a data-toggle="tab" href="#panel-563658">第二部分</a>
+					</li>
+				</ul>
+				<div class="tab-content">
+					<div class="tab-pane active" id="panel-99734">
+						<table class="table table-condensed table-striped table-hover">
+							<thead>
+								<tr>
+									<th>
+										航班号
+									</th>
+									<th>
+										出发地
+									</th>
+									<th>
+										目的地
+									</th>
+									<th>
+										起飞时间
+									</th>
+									<th>
+										座舱类型
+									</th>
+									<th>
+										定价
+									</th>
+									<th>
+									</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>
+										1
+									</td>
+									<td>
+										TB - Monthly
+									</td>
+									<td>
+										01/04/2012
+									</td>
+									<td>
+										Default
+									</td>
+									<td>
+										Default
+									</td>
+									<td>
+										Default
+									</td>
+								</tr>
+								<tr class="success">
+									<td>
+										1
+									</td>
+									<td>
+										TB - Monthly
+									</td>
+									<td>
+										01/04/2012
+									</td>
+									<td>
+										Approved
+									</td>
+								</tr>
+								<tr class="error">
+									<td>
+										2
+									</td>
+									<td>
+										TB - Monthly
+									</td>
+									<td>
+										02/04/2012
+									</td>
+									<td>
+										Declined
+									</td>
+								</tr>
+								<tr class="warning">
+									<td>
+										3
+									</td>
+									<td>
+										TB - Monthly
+									</td>
+									<td>
+										03/04/2012
+									</td>
+									<td>
+										Pending
+									</td>
+								</tr>
+								<tr class="info">
+									<td>
+										4
+									</td>
+									<td>
+										TB - Monthly
+									</td>
+									<td>
+										04/04/2012
+									</td>
+									<td>
+										Call in to confirm
+									</td>
+								</tr>
+							</tbody>
+						</table><br /><br />
+<nav aria-label="...">
+  <ul class="pager">
+    <li><a href="#">Previous</a></li>
+    <li><a href="#">Next</a></li>
+  </ul>
+</nav>
+					</div>
+					<div class="tab-pane" id="panel-563658">
+						<table class="table table-condensed table-striped table-hover">
+							<thead>
+								<tr>
+									<th>
+										航班号
+									</th>
+									<th>
+										出发地
+									</th>
+									<th>
+										目的地
+									</th>
+									<th>
+										起飞时间
+									</th>
+									<th>
+										座舱类型
+									</th>
+									<th>
+										定价
+									</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>
+										1
+									</td>
+									<td>
+										TB - Monthly
+									</td>
+									<td>
+										01/04/2012
+									</td>
+									<td>
+										Default
+									</td>
+									<td>
+										<div class="btn-group">
+                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">选择座舱类型： <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a href="#">头等舱</a></li>
+                      <li><a href="#">商务舱</a></li>
+                      <li><a href="#">经济舱</a></li>
+                    </ul> 
+               </div>
+									</td>
+									<td>
+										Default <button class="btn btn-primary" type="button">预定</button>
+									</td>
+								</tr>
+								<tr class="success">
+									<td>
+										1
+									</td>
+									<td>
+										TB - Monthly
+									</td>
+									<td>
+										01/04/2012
+									</td>
+									<td>
+										Approved
+									</td>
+								</tr>
+								<tr class="error">
+									<td>
+										2
+									</td>
+									<td>
+										TB - Monthly
+									</td>
+									<td>
+										02/04/2012
+									</td>
+									<td>
+										Declined
+									</td>
+								</tr>
+								<tr class="warning">
+									<td>
+										3
+									</td>
+									<td>
+										TB - Monthly
+									</td>
+									<td>
+										03/04/2012
+									</td>
+									<td>
+										Pending
+									</td>
+								</tr>
+								<tr class="info">
+									<td>
+										4
+									</td>
+									<td>
+										TB - Monthly
+									</td>
+									<td>
+										04/04/2012
+									</td>
+									<td>
+										Call in to confirm
+									</td>
+								</tr>
+							</tbody>
+						</table><br /><br />
+						<nav aria-label="...">
+  <ul class="pager">
+    <li><a href="#">Previous</a></li>
+    <li><a href="#">Next</a></li>
+  </ul>
+</nav>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>
